@@ -3,9 +3,9 @@ package com.company.sakila.db0.sakila.store.generated;
 import com.company.sakila.db0.sakila.address.Address;
 import com.company.sakila.db0.sakila.staff.Staff;
 import com.company.sakila.db0.sakila.store.Store;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.config.identifier.ColumnIdentifier;
 import com.speedment.runtime.config.identifier.TableIdentifier;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.core.manager.Manager;
 import com.speedment.runtime.field.ComparableField;
 import com.speedment.runtime.field.IntForeignKeyField;
@@ -31,7 +31,7 @@ public interface GeneratedStore {
      * This Field corresponds to the {@link Store} field that can be obtained
      * using the {@link Store#getStoreId()} method.
      */
-    final ShortField<Store, Short> STORE_ID = ShortField.create(
+    ShortField<Store, Short> STORE_ID = ShortField.create(
         Identifier.STORE_ID,
         Store::getStoreId,
         Store::setStoreId,
@@ -42,7 +42,7 @@ public interface GeneratedStore {
      * This Field corresponds to the {@link Store} field that can be obtained
      * using the {@link Store#getManagerStaffId()} method.
      */
-    final ShortForeignKeyField<Store, Short, Staff> MANAGER_STAFF_ID = ShortForeignKeyField.create(
+    ShortForeignKeyField<Store, Short, Staff> MANAGER_STAFF_ID = ShortForeignKeyField.create(
         Identifier.MANAGER_STAFF_ID,
         Store::getManagerStaffId,
         Store::setManagerStaffId,
@@ -54,7 +54,7 @@ public interface GeneratedStore {
      * This Field corresponds to the {@link Store} field that can be obtained
      * using the {@link Store#getAddressId()} method.
      */
-    final IntForeignKeyField<Store, Integer, Address> ADDRESS_ID = IntForeignKeyField.create(
+    IntForeignKeyField<Store, Integer, Address> ADDRESS_ID = IntForeignKeyField.create(
         Identifier.ADDRESS_ID,
         Store::getAddressId,
         Store::setAddressId,
@@ -66,7 +66,7 @@ public interface GeneratedStore {
      * This Field corresponds to the {@link Store} field that can be obtained
      * using the {@link Store#getLastUpdate()} method.
      */
-    final ComparableField<Store, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
+    ComparableField<Store, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
         Identifier.LAST_UPDATE,
         Store::getLastUpdate,
         Store::setLastUpdate,

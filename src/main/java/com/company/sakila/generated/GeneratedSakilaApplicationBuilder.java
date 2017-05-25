@@ -35,8 +35,8 @@ import com.company.sakila.db0.sakila.staff.StaffManagerImpl;
 import com.company.sakila.db0.sakila.staff.StaffSqlAdapter;
 import com.company.sakila.db0.sakila.store.StoreManagerImpl;
 import com.company.sakila.db0.sakila.store.StoreSqlAdapter;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.common.injector.Injector;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.core.internal.AbstractApplicationBuilder;
 
 /**

@@ -1,7 +1,7 @@
 package com.company.sakila.db0.sakila.film_text.generated;
 
 import com.company.sakila.db0.sakila.film_text.FilmText;
-import com.speedment.runtime.core.annotation.GeneratedCode;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.core.util.OptionalUtil;
 import java.util.Objects;
 import java.util.Optional;

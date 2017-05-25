@@ -1,9 +1,9 @@
 package com.company.sakila.db0.sakila.actor.generated;
 
 import com.company.sakila.db0.sakila.actor.Actor;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.config.identifier.ColumnIdentifier;
 import com.speedment.runtime.config.identifier.TableIdentifier;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.field.ComparableField;
 import com.speedment.runtime.field.IntField;
 import com.speedment.runtime.field.StringField;
@@ -27,7 +27,7 @@ public interface GeneratedActor {
      * This Field corresponds to the {@link Actor} field that can be obtained
      * using the {@link Actor#getActorId()} method.
      */
-    final IntField<Actor, Integer> ACTOR_ID = IntField.create(
+    IntField<Actor, Integer> ACTOR_ID = IntField.create(
         Identifier.ACTOR_ID,
         Actor::getActorId,
         Actor::setActorId,
@@ -38,7 +38,7 @@ public interface GeneratedActor {
      * This Field corresponds to the {@link Actor} field that can be obtained
      * using the {@link Actor#getFirstName()} method.
      */
-    final StringField<Actor, String> FIRST_NAME = StringField.create(
+    StringField<Actor, String> FIRST_NAME = StringField.create(
         Identifier.FIRST_NAME,
         Actor::getFirstName,
         Actor::setFirstName,
@@ -49,7 +49,7 @@ public interface GeneratedActor {
      * This Field corresponds to the {@link Actor} field that can be obtained
      * using the {@link Actor#getLastName()} method.
      */
-    final StringField<Actor, String> LAST_NAME = StringField.create(
+    StringField<Actor, String> LAST_NAME = StringField.create(
         Identifier.LAST_NAME,
         Actor::getLastName,
         Actor::setLastName,
@@ -60,7 +60,7 @@ public interface GeneratedActor {
      * This Field corresponds to the {@link Actor} field that can be obtained
      * using the {@link Actor#getLastUpdate()} method.
      */
-    final ComparableField<Actor, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
+    ComparableField<Actor, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
         Identifier.LAST_UPDATE,
         Actor::getLastUpdate,
         Actor::setLastUpdate,

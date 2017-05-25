@@ -3,9 +3,9 @@ package com.company.sakila.db0.sakila.inventory.generated;
 import com.company.sakila.db0.sakila.film.Film;
 import com.company.sakila.db0.sakila.inventory.Inventory;
 import com.company.sakila.db0.sakila.store.Store;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.config.identifier.ColumnIdentifier;
 import com.speedment.runtime.config.identifier.TableIdentifier;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.core.manager.Manager;
 import com.speedment.runtime.field.ComparableField;
 import com.speedment.runtime.field.IntField;
@@ -31,7 +31,7 @@ public interface GeneratedInventory {
      * This Field corresponds to the {@link Inventory} field that can be
      * obtained using the {@link Inventory#getInventoryId()} method.
      */
-    final IntField<Inventory, Integer> INVENTORY_ID = IntField.create(
+    IntField<Inventory, Integer> INVENTORY_ID = IntField.create(
         Identifier.INVENTORY_ID,
         Inventory::getInventoryId,
         Inventory::setInventoryId,
@@ -42,7 +42,7 @@ public interface GeneratedInventory {
      * This Field corresponds to the {@link Inventory} field that can be
      * obtained using the {@link Inventory#getFilmId()} method.
      */
-    final IntForeignKeyField<Inventory, Integer, Film> FILM_ID = IntForeignKeyField.create(
+    IntForeignKeyField<Inventory, Integer, Film> FILM_ID = IntForeignKeyField.create(
         Identifier.FILM_ID,
         Inventory::getFilmId,
         Inventory::setFilmId,
@@ -54,7 +54,7 @@ public interface GeneratedInventory {
      * This Field corresponds to the {@link Inventory} field that can be
      * obtained using the {@link Inventory#getStoreId()} method.
      */
-    final ShortForeignKeyField<Inventory, Short, Store> STORE_ID = ShortForeignKeyField.create(
+    ShortForeignKeyField<Inventory, Short, Store> STORE_ID = ShortForeignKeyField.create(
         Identifier.STORE_ID,
         Inventory::getStoreId,
         Inventory::setStoreId,
@@ -66,7 +66,7 @@ public interface GeneratedInventory {
      * This Field corresponds to the {@link Inventory} field that can be
      * obtained using the {@link Inventory#getLastUpdate()} method.
      */
-    final ComparableField<Inventory, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
+    ComparableField<Inventory, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
         Identifier.LAST_UPDATE,
         Inventory::getLastUpdate,
         Inventory::setLastUpdate,

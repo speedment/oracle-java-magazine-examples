@@ -1,9 +1,9 @@
 package com.company.sakila.db0.sakila.film_text.generated;
 
 import com.company.sakila.db0.sakila.film_text.FilmText;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.config.identifier.ColumnIdentifier;
 import com.speedment.runtime.config.identifier.TableIdentifier;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.core.util.OptionalUtil;
 import com.speedment.runtime.field.ShortField;
 import com.speedment.runtime.field.StringField;
@@ -27,7 +27,7 @@ public interface GeneratedFilmText {
      * This Field corresponds to the {@link FilmText} field that can be obtained
      * using the {@link FilmText#getFilmId()} method.
      */
-    final ShortField<FilmText, Short> FILM_ID = ShortField.create(
+    ShortField<FilmText, Short> FILM_ID = ShortField.create(
         Identifier.FILM_ID,
         FilmText::getFilmId,
         FilmText::setFilmId,
@@ -38,7 +38,7 @@ public interface GeneratedFilmText {
      * This Field corresponds to the {@link FilmText} field that can be obtained
      * using the {@link FilmText#getTitle()} method.
      */
-    final StringField<FilmText, String> TITLE = StringField.create(
+    StringField<FilmText, String> TITLE = StringField.create(
         Identifier.TITLE,
         FilmText::getTitle,
         FilmText::setTitle,
@@ -49,7 +49,7 @@ public interface GeneratedFilmText {
      * This Field corresponds to the {@link FilmText} field that can be obtained
      * using the {@link FilmText#getDescription()} method.
      */
-    final StringField<FilmText, String> DESCRIPTION = StringField.create(
+    StringField<FilmText, String> DESCRIPTION = StringField.create(
         Identifier.DESCRIPTION,
         o -> OptionalUtil.unwrap(o.getDescription()),
         FilmText::setDescription,

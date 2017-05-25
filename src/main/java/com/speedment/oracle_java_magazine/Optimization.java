@@ -22,6 +22,7 @@ import com.company.sakila.db0.sakila.film.FilmManager;
 import com.speedment.oracle_java_magazine.util.ExampleUtil;
 import static com.speedment.oracle_java_magazine.util.ExampleUtil.buildApplication;
 import java.util.Comparator;
+import java.util.Optional;
 
 /**
  *
@@ -42,8 +43,20 @@ public class Optimization {
     }
 
     private void run() {
-        //countPg13Films();
+        findALongFilm();
+        countPg13Films();
         understandingOptimization();
+    }
+
+    private void findALongFilm() {
+        ExampleUtil.log("findALongFilm");
+
+        Optional<Film> longFilm = films.stream()
+            .filter(Film.LENGTH.greaterThan(120))
+            .findAny();
+
+        longFilm.ifPresent(System.out::println);
+
     }
 
     private void countPg13Films() {
@@ -54,29 +67,23 @@ public class Optimization {
             .count();
 
         System.out.format(
-            "There are %d films rated 'PG-13'", count
+            "There are %d films rated 'PG-13'%n", count
         );
-        
-        System.out.println();
+
     }
 
     private void understandingOptimization() {
         ExampleUtil.log("understandingOptimization");
 
-//        Comparator<Film> comparator = Film.LENGTH.comparator();
-        
         long count = films.stream()
             .filter(Film.RATING.equal("PG-13"))
             .filter(Film.LENGTH.greaterThan(75))
-//            .map(Film.TITLE.getter())
             .map(Film::getTitle)
             .sorted()
             .count();
 
-        System.out.format("Found %d films", count);
-        
-        System.out.println();
-        
+        System.out.format("Found %d films%n", count);
+
     }
 
 

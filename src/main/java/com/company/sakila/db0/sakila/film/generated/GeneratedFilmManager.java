@@ -1,7 +1,7 @@
 package com.company.sakila.db0.sakila.film.generated;
 
 import com.company.sakila.db0.sakila.film.Film;
-import com.speedment.runtime.core.annotation.GeneratedCode;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.core.manager.Manager;
 
 /**

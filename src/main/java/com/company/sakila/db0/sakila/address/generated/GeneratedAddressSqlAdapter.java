@@ -2,10 +2,10 @@ package com.company.sakila.db0.sakila.address.generated;
 
 import com.company.sakila.db0.sakila.address.Address;
 import com.company.sakila.db0.sakila.address.AddressImpl;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.common.injector.annotation.ExecuteBefore;
 import com.speedment.common.injector.annotation.WithState;
 import com.speedment.runtime.config.identifier.TableIdentifier;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.core.component.sql.SqlPersistenceComponent;
 import com.speedment.runtime.core.component.sql.SqlStreamSupplierComponent;
 import com.speedment.runtime.core.exception.SpeedmentException;

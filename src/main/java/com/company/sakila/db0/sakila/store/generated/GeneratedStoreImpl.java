@@ -3,7 +3,7 @@ package com.company.sakila.db0.sakila.store.generated;
 import com.company.sakila.db0.sakila.address.Address;
 import com.company.sakila.db0.sakila.staff.Staff;
 import com.company.sakila.db0.sakila.store.Store;
-import com.speedment.runtime.core.annotation.GeneratedCode;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.core.manager.Manager;
 import java.sql.Timestamp;
 import java.util.Objects;

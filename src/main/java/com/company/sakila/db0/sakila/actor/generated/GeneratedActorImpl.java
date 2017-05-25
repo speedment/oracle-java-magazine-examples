@@ -1,7 +1,7 @@
 package com.company.sakila.db0.sakila.actor.generated;
 
 import com.company.sakila.db0.sakila.actor.Actor;
-import com.speedment.runtime.core.annotation.GeneratedCode;
+import com.speedment.common.annotation.GeneratedCode;
 import java.sql.Timestamp;
 import java.util.Objects;
 import java.util.StringJoiner;

@@ -1,9 +1,9 @@
 package com.company.sakila.db0.sakila.category.generated;
 
 import com.company.sakila.db0.sakila.category.Category;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.config.identifier.ColumnIdentifier;
 import com.speedment.runtime.config.identifier.TableIdentifier;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.field.ComparableField;
 import com.speedment.runtime.field.ShortField;
 import com.speedment.runtime.field.StringField;
@@ -27,7 +27,7 @@ public interface GeneratedCategory {
      * This Field corresponds to the {@link Category} field that can be obtained
      * using the {@link Category#getCategoryId()} method.
      */
-    final ShortField<Category, Short> CATEGORY_ID = ShortField.create(
+    ShortField<Category, Short> CATEGORY_ID = ShortField.create(
         Identifier.CATEGORY_ID,
         Category::getCategoryId,
         Category::setCategoryId,
@@ -38,7 +38,7 @@ public interface GeneratedCategory {
      * This Field corresponds to the {@link Category} field that can be obtained
      * using the {@link Category#getName()} method.
      */
-    final StringField<Category, String> NAME = StringField.create(
+    StringField<Category, String> NAME = StringField.create(
         Identifier.NAME,
         Category::getName,
         Category::setName,
@@ -49,7 +49,7 @@ public interface GeneratedCategory {
      * This Field corresponds to the {@link Category} field that can be obtained
      * using the {@link Category#getLastUpdate()} method.
      */
-    final ComparableField<Category, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
+    ComparableField<Category, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
         Identifier.LAST_UPDATE,
         Category::getLastUpdate,
         Category::setLastUpdate,

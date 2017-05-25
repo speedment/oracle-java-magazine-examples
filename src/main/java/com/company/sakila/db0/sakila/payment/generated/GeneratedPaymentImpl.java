@@ -4,7 +4,7 @@ import com.company.sakila.db0.sakila.customer.Customer;
 import com.company.sakila.db0.sakila.payment.Payment;
 import com.company.sakila.db0.sakila.rental.Rental;
 import com.company.sakila.db0.sakila.staff.Staff;
-import com.speedment.runtime.core.annotation.GeneratedCode;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.core.manager.Manager;
 import com.speedment.runtime.core.util.OptionalUtil;
 import java.math.BigDecimal;

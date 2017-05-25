@@ -1,8 +1,8 @@
 package com.company.sakila.db0.sakila.film_category.generated;
 
 import com.company.sakila.db0.sakila.film_category.FilmCategory;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.config.identifier.TableIdentifier;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.core.manager.AbstractManager;
 import com.speedment.runtime.field.Field;
 import java.util.stream.Stream;
@@ -42,8 +42,8 @@ public abstract class GeneratedFilmCategoryManagerImpl extends AbstractManager<F
     @Override
     public Stream<Field<FilmCategory>> primaryKeyFields() {
         return Stream.of(
-            FilmCategory.FILM_ID,
-            FilmCategory.CATEGORY_ID
+            FilmCategory.CATEGORY_ID,
+            FilmCategory.FILM_ID
         );
     }
 }

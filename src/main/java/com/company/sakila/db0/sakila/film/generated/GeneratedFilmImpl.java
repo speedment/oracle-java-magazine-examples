@@ -2,7 +2,7 @@ package com.company.sakila.db0.sakila.film.generated;
 
 import com.company.sakila.db0.sakila.film.Film;
 import com.company.sakila.db0.sakila.language.Language;
-import com.speedment.runtime.core.annotation.GeneratedCode;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.core.manager.Manager;
 import com.speedment.runtime.core.util.OptionalUtil;
 import java.math.BigDecimal;

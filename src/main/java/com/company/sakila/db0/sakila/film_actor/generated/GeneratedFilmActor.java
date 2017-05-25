@@ -3,9 +3,9 @@ package com.company.sakila.db0.sakila.film_actor.generated;
 import com.company.sakila.db0.sakila.actor.Actor;
 import com.company.sakila.db0.sakila.film.Film;
 import com.company.sakila.db0.sakila.film_actor.FilmActor;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.config.identifier.ColumnIdentifier;
 import com.speedment.runtime.config.identifier.TableIdentifier;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 import com.speedment.runtime.core.manager.Manager;
 import com.speedment.runtime.field.ComparableField;
 import com.speedment.runtime.field.IntForeignKeyField;
@@ -29,7 +29,7 @@ public interface GeneratedFilmActor {
      * This Field corresponds to the {@link FilmActor} field that can be
      * obtained using the {@link FilmActor#getActorId()} method.
      */
-    final IntForeignKeyField<FilmActor, Integer, Actor> ACTOR_ID = IntForeignKeyField.create(
+    IntForeignKeyField<FilmActor, Integer, Actor> ACTOR_ID = IntForeignKeyField.create(
         Identifier.ACTOR_ID,
         FilmActor::getActorId,
         FilmActor::setActorId,
@@ -41,7 +41,7 @@ public interface GeneratedFilmActor {
      * This Field corresponds to the {@link FilmActor} field that can be
      * obtained using the {@link FilmActor#getFilmId()} method.
      */
-    final IntForeignKeyField<FilmActor, Integer, Film> FILM_ID = IntForeignKeyField.create(
+    IntForeignKeyField<FilmActor, Integer, Film> FILM_ID = IntForeignKeyField.create(
         Identifier.FILM_ID,
         FilmActor::getFilmId,
         FilmActor::setFilmId,
@@ -53,7 +53,7 @@ public interface GeneratedFilmActor {
      * This Field corresponds to the {@link FilmActor} field that can be
      * obtained using the {@link FilmActor#getLastUpdate()} method.
      */
-    final ComparableField<FilmActor, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
+    ComparableField<FilmActor, Timestamp, Timestamp> LAST_UPDATE = ComparableField.create(
         Identifier.LAST_UPDATE,
         FilmActor::getLastUpdate,
         FilmActor::setLastUpdate,

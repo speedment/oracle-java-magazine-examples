@@ -10,10 +10,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <speedment.version>3.0.8</speedment.version>
+        <speedment.version>3.0.9</speedment.version>
         <db.groupId>mysql</db.groupId>
         <db.artifactId>mysql-connector-java</db.artifactId>
-        <db.version>5.1.41</db.version>
+        <db.version>5.1.42</db.version>
     </properties>
     
     <build>

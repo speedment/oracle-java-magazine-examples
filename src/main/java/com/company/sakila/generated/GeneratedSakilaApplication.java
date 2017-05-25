@@ -1,7 +1,7 @@
 package com.company.sakila.generated;
 
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.core.Speedment;
-import com.speedment.runtime.core.annotation.GeneratedCode;
 
 /**
  * The generated {@link

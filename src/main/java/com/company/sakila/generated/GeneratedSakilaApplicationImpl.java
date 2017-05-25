@@ -1,6 +1,6 @@
 package com.company.sakila.generated;
 
-import com.speedment.runtime.core.annotation.GeneratedCode;
+import com.speedment.common.annotation.GeneratedCode;
 import com.speedment.runtime.core.internal.AbstractSpeedment;
 
 /**
